@@ -1,0 +1,269 @@
+{
+	"categories": [
+		{
+			"name": "product",
+			"contentsType": "effects"
+		},
+		{
+			"name": "equipment",
+			"contentsType": "effects"
+		},
+		{
+			"name": "box",
+			"contentsType": "container"
+		}
+	],
+	"items": [
+		{
+			"price": 8000,
+			"category": "equipment",
+			"contents": [
+				{
+					"additive": 10,
+					"property": "damage"
+				}
+			],
+			"description": "",
+			"weight": 1.1,
+			"name": "Пистолет",
+			"image": "weapon",
+			"id": "0"
+		},
+		{
+			"price": 24000,
+			"category": "equipment",
+			"contents": [
+				{
+					"additive": 40,
+					"property": "damage"
+				}
+			],
+			"description": "",
+			"weight": 3.4,
+			"name": "Автомат",
+			"image": "weapon",
+			"id": "1"
+		},
+		{
+			"price": 4500,
+			"category": "equipment",
+			"contents": [
+				{
+					"additive": 70,
+					"property": "damage"
+				}
+			],
+			"description": "",
+			"weight": 0.3,
+			"name": "Нож",
+			"image": "weapon",
+			"id": "2"
+		},
+		{
+			"price": 0,
+			"category": "box",
+			"contents": [],
+			"description": "",
+			"weight": 7,
+			"name": "Ящик",
+			"image": "secret",
+			"id": "3"
+		},
+		{
+			"price": 850,
+			"category": "product",
+			"contents": [
+				{
+					"additive": 50,
+					"property": "health"
+				}
+			],
+			"description": "",
+			"weight": 1,
+			"name": "Аптечка",
+			"image": "medkit",
+			"id": "4"
+		},
+		{
+			"price": 300,
+			"category": "product",
+			"contents": [
+				{
+					"additive": 80,
+					"property": "hunger"
+				},
+				{
+					"additive": 5,
+					"property": "health"
+				}
+			],
+			"description": "",
+			"weight": 0.4,
+			"name": "Тушёнка",
+			"image": "item",
+			"id": "5"
+		},
+		{
+			"price": 150,
+			"category": "product",
+			"contents": [
+				{
+					"additive": 80,
+					"property": "thirst"
+				},
+				{
+					"additive": 10,
+					"property": "hunger"
+				},
+				{
+					"additive": 5,
+					"property": "health"
+				}
+			],
+			"description": "",
+			"weight": 0.5,
+			"name": "Вода",
+			"image": "item",
+			"id": "6"
+		},
+		{
+			"price": 45000,
+			"category": "equipment",
+			"contents": [
+				{
+					"additive": 70,
+					"property": "armor"
+				}
+			],
+			"description": "",
+			"weight": 6,
+			"name": "Бронежилет",
+			"image": "armor",
+			"id": "7"
+		},
+		{
+			"price": 3000,
+			"category": "equipment",
+			"contents": [
+				{
+					"additive": 10,
+					"property": "armor"
+				}
+			],
+			"description": "",
+			"weight": 1.3,
+			"name": "Каска",
+			"image": "armor",
+			"id": "8"
+		},
+		{
+			"price": 0,
+			"category": "box",
+			"contents": [
+				{
+					"amount": 2,
+					"itemID": "4"
+				},
+				{
+					"amount": 1,
+					"itemID": "13"
+				},
+				{
+					"amount": 1,
+					"itemID": "12"
+				}
+			],
+			"description": "",
+			"weight": 4,
+			"name": "Рюкзак",
+			"image": "secret",
+			"id": "9"
+		},
+		{
+			"price": 0,
+			"category": "box",
+			"contents": [],
+			"description": "",
+			"weight": 16,
+			"name": "Бочка",
+			"image": "secret",
+			"id": "10"
+		},
+		{
+			"price": 2000,
+			"category": "product",
+			"contents": [
+				{
+					"additive": 10,
+					"property": "health"
+				}
+			],
+			"description": "",
+			"weight": 0.1,
+			"name": "Антирад",
+			"image": "medkit",
+			"id": "11"
+		},
+		{
+			"price": 50,
+			"category": "product",
+			"contents": [
+				{
+					"additive": 10,
+					"property": "hunger"
+				}
+			],
+			"description": "",
+			"weight": 0.15,
+			"name": "Хлеб",
+			"image": "item",
+			"id": "12"
+		},
+		{
+			"price": 120,
+			"category": "product",
+			"contents": [
+				{
+					"additive": 100,
+					"property": "energy"
+				}
+			],
+			"description": "",
+			"weight": 0.5,
+			"name": "Энергетик",
+			"image": "item",
+			"id": "13"
+		},
+		{
+			"price": 100,
+			"category": "product",
+			"contents": [
+				{
+					"additive": 15,
+					"property": "health"
+				}
+			],
+			"description": "",
+			"weight": 0.2,
+			"name": "Бинт",
+			"image": "medkit",
+			"id": "15"
+		},
+		{
+			"price": 4500,
+			"category": "equipment",
+			"contents": [
+				{
+					"additive": 10,
+					"property": "armor"
+				}
+			],
+			"description": "",
+			"weight": 2,
+			"name": "Сапоги",
+			"image": "armor",
+			"id": "16"
+		}
+	],
+	"atlas": "D:\\workspace\\personal\\ItemsEditor\\res\\loc_tiles.xml"
+}

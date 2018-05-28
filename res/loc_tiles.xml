@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="loc_tiles.png">
+	<!--
+	Created with ShoeBox
+	http://renderhjs.net/shoebox/
+	-->
+	<SubTexture name="armor"	x="225"	y="225"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="artefact"	x="450"	y="225"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="char"	x="450"	y="0"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="enemy"	x="225"	y="675"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="fog"	x="225"	y="450"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="fog_locked"	x="450"	y="450"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="item"	x="225"	y="0"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="medkit"	x="0"	y="675"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="secret"	x="0"	y="450"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="trap"	x="0"	y="225"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+	<SubTexture name="weapon"	x="0"	y="0"	width="224"	height="224" frameX="-0" frameY="-0" frameWidth="224" frameHeight="224"/>
+</TextureAtlas>
