@@ -4,15 +4,10 @@ package items.controllers
 	
 	import contents.events.ContentsEvent;
 	
-	import feathers.core.FeathersControl;
-	
 	import items.collections.ItemPropertyEnum;
-	
 	import items.events.ItemPropertyEvent;
 	import items.events.ListItemRendererEvent;
-	
 	import items.models.MoItem;
-	
 	import items.views.ItemListItemRenderer;
 	
 	import starling.events.Event;
@@ -90,10 +85,8 @@ package items.controllers
 				var name:String = _item.getValue(ItemPropertyEnum.NAME);
 				var price:Number = _item.getValue(ItemPropertyEnum.PRICE);
 				var weight:Number = _item.getValue(ItemPropertyEnum.WEIGHT);
-				view.label = name + " × " + _item.numContent +
-						"\n" + price + " rub, " + weight + " kg";
-			} else {
-				view.label = "null";
+				var description:String = _item.getValue(ItemPropertyEnum.DESCRIPTION);
+				view.setInfo(name, _item.numContent, price, weight, description ? description.length > 0 : false);
 			}
 			
 			view.image = image;

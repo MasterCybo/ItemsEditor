@@ -1,5 +1,6 @@
 package items.views
 {
+	import feathers.controls.Label;
 	import feathers.controls.List;
 	import feathers.controls.ToggleButton;
 	import feathers.controls.renderers.IListItemRenderer;
@@ -7,8 +8,6 @@ package items.views
 	import flash.geom.Rectangle;
 	
 	import graphics.Assets;
-	
-	import items.collections.ItemPropertyEnum;
 	
 	import items.controllers.ItemListItemRendererController;
 	import items.events.ListItemRendererEvent;
@@ -28,6 +27,10 @@ package items.views
 		private var _factoryID:String;
 		private var _data:MoItem;
 		private var _image:Image;
+		private var _titleLabel:Label;
+		private var _countLabel:Label;
+		private var _paramsLabel:Label;
+		private var _descriptionLabel:Label;
 		private var _defaultTexture:Texture = Texture.fromColor(FRAME.width, FRAME.height, 0xFFFFFF);
 		private var _textureBounds:Rectangle = new Rectangle();
 		
@@ -42,10 +45,20 @@ package items.views
 			paddingTop = paddingBottom = 10;
 			paddingLeft = paddingRight = 20;
 			
-//			_defaultTexture = Texture.fromColor(FRAME.width, FRAME.height, 0xFFFFFF)
-			
 			_image = new Image(_defaultTexture);
 			addChild(_image);
+			
+			_titleLabel = new Label();
+			addChild(_titleLabel);
+			
+			_paramsLabel = new Label();
+			addChild(_paramsLabel);
+			
+			_descriptionLabel = new Label();
+			addChild(_descriptionLabel);
+			
+			_countLabel = new Label();
+			addChild(_countLabel);
 			
 			new ItemListItemRendererController(this);
 		}
@@ -57,6 +70,21 @@ package items.views
 			super.dispose();
 		}
 		
+		public function setInfo(title:String, counter:Number, price:Number = 0, weight:Number = 0, hasDescription:Boolean = false):void
+		{
+			_titleLabel.text = title; // ●↓
+			_paramsLabel.text = "" + (price != 0 ? ("₽" + price + "    ") : "") + (weight != 0 ? ("↓" + weight) : "");
+			_descriptionLabel.text = hasDescription ? "..." : "";
+			_countLabel.text = "" + counter;
+			
+			_titleLabel.validate();
+			_paramsLabel.validate();
+			_descriptionLabel.validate();
+			_countLabel.validate();
+			
+			invalidate(INVALIDATION_FLAG_SIZE);
+		}
+		
 		public function set image(value:String):void
 		{
 			var texture:Texture = Assets.me.getTexture(value);
@@ -65,16 +93,7 @@ package items.views
 			} else {
 				_image.texture = _defaultTexture;
 			}
-			validateImage();
-		}
-		
-		private function validateImage():void
-		{
-			_image.getBounds(_image, _textureBounds);
-			RectangleUtil.fit(_textureBounds, FRAME, ScaleMode.SHOW_ALL, false, _textureBounds);
-			_image.readjustSize(_textureBounds.width, _textureBounds.height);
-			_image.x = 10;
-			_image.y = int((height - _image.height) / 2);
+			invalidate(INVALIDATION_FLAG_SIZE);
 		}
 		
 		override public function invalidate(flag:String = "all"):void
@@ -82,7 +101,27 @@ package items.views
 			super.invalidate(flag);
 			
 			if (flag == INVALIDATION_FLAG_SIZE) {
-				validateImage();
+				_image.getBounds(_image, _textureBounds);
+				RectangleUtil.fit(_textureBounds, FRAME, ScaleMode.SHOW_ALL, false, _textureBounds);
+				_image.readjustSize(_textureBounds.width, _textureBounds.height);
+				
+				var hh:int = Math.max(_image.height, _titleLabel.height, _paramsLabel.height, _countLabel.height) + paddingTop + paddingBottom;
+				setSize(width, hh);
+				
+				_image.x = 10;
+				_image.y = int((height - _image.height) / 2);
+				
+				_titleLabel.x = _image.x + _image.width + 20;
+				_titleLabel.y = int((height - _titleLabel.height) / 2);
+				
+				_paramsLabel.x = _titleLabel.x + _titleLabel.width + 20;
+				_paramsLabel.y = int((height - _paramsLabel.height) / 2);
+				
+				_countLabel.x = width - paddingRight - _countLabel.width;
+				_countLabel.y = int((height - _countLabel.height) / 2);
+				
+				_descriptionLabel.x = _titleLabel.x;
+				_descriptionLabel.y = height - _descriptionLabel.height - paddingBottom;
 			}
 		}
 		

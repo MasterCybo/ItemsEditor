@@ -8,6 +8,7 @@ package
 	import feathers.themes.AeonDesktopTheme;
 	
 	import starling.text.TextFormat;
+	import starling.utils.Align;
 	
 	public class AppTheme extends AeonDesktopTheme
 	{
@@ -50,6 +51,7 @@ package
 				_labelFormat = label.fontStyles.clone();
 				_labelFormat.font = "Calibri";
 				_labelFormat.size = 14;
+				_labelFormat.horizontalAlign = Align.LEFT;
 			}
 			label.fontStyles = _labelFormat;
 		}
@@ -62,6 +64,7 @@ package
 				_areaFormat = textArea.fontStyles.clone();
 				_areaFormat.font = "Tahoma";
 				_areaFormat.size = 13;
+				_areaFormat.horizontalAlign = Align.LEFT;
 			}
 			
 			textArea.fontStyles = _inputFormat;
