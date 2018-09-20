@@ -74,16 +74,20 @@ package categories.controllers
 				case event.target is AppPickerList:
 					_newContentsType = AppPickerList(event.target).selectedItem as ContentsTypeEnum;
 					_removedItems = DataStore.me.itemsManager.getItemsFor(_category);
-					if (!_category.contentsType.equals(_newContentsType) && _removedItems && _removedItems.length > 0) {
-						eventDispatcher.dispatchEvent(
-								new PopupEvent(
-										PopupEvent.SHOW_PERMISSION,
-										"Change Contents Type?",
-										"All objects in this category will be deleted.",
-										setupContentsType,
-										revertContentsType
-								)
-						);
+					if (!_category.contentsType.equals(_newContentsType)) {
+						if (_removedItems && _removedItems.length > 0) {
+							eventDispatcher.dispatchEvent(
+									new PopupEvent(
+											PopupEvent.SHOW_PERMISSION,
+											"Change Contents Type?",
+											"All objects in this category will be deleted.",
+											setupContentsType,
+											revertContentsType
+									)
+							);
+						} else {
+							setupContentsType();
+						}
 					} else {
 						revertContentsType();
 					}

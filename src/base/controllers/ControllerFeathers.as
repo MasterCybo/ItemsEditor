@@ -9,7 +9,7 @@ package base.controllers
 	
 	public class ControllerFeathers
 	{
-		public static var _eventDispatcher:EventDispatcher;
+		private static var _eventDispatcher:EventDispatcher;
 		
 		public static function config(eventDispatcher:EventDispatcher):void
 		{

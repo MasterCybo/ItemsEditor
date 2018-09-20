@@ -6,7 +6,7 @@ package base.commands
 	
 	public class Command extends EventDispatcher
 	{
-		public static var _eventDispatcher:EventDispatcher;
+		private static var _eventDispatcher:EventDispatcher;
 		
 		public static function config(eventDispatcher:EventDispatcher):void
 		{

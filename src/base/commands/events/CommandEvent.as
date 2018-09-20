@@ -14,6 +14,6 @@ package base.commands.events
 			super(type);
 		}
 		
-		public function get data():* {return _data;}
+		public function get data():* { return _data; }
 	}
 }

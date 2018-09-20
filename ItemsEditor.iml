@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="Flex" version="4">
-  <component name="FlexBuildConfigurationManager" active="ItemsEditor">
+  <component name="FlexBuildConfigurationManager" active="debug">
     <configurations>
-      <configuration name="ItemsEditor" target-platform="Desktop" pure-as="true" main-class="Main" output-file="ItemsEditor.swf" output-folder="$MODULE_DIR$/out/production/ItemsEditor">
-        <dependencies target-player="29.0">
+      <configuration name="debug" target-platform="Desktop" pure-as="true" main-class="Main" output-file="ItemsEditor.swf" output-folder="$MODULE_DIR$/out/debug">
+        <dependencies target-player="31.0">
           <entries>
             <entry library-name="libs" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="AIR_29c" />
+          <sdk name="AIR_31c" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/items-editor-app.xml" package-file-name="ItemsEditor">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/icons" path-in-package="icons" />
+          </files-to-package>
+        </packaging-air-desktop>
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+      <configuration name="release" target-platform="Desktop" pure-as="true" main-class="Main" output-file="ItemsEditor.swf" output-folder="$MODULE_DIR$/out/release">
+        <dependencies>
+          <entries>
+            <entry library-name="libs" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIR_31c" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="false" />
+          </map>
+        </compiler-options>
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/items-editor-app.xml" package-file-name="release">
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/icons" path-in-package="icons" />
           </files-to-package>
@@ -28,7 +50,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="AIR_29c" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="AIR_31c" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="libs" level="project" />
   </component>
