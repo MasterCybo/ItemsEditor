@@ -1,6 +1,5 @@
 package screens.controllers
 {
-	import base.controllers.ControllerFeathers;
 	import base.views.AppButton;
 	
 	import core.commands.NewFile;
@@ -16,6 +15,8 @@ package screens.controllers
 	
 	import graphics.commands.OpenAtlas;
 	import graphics.events.AtlasEvent;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
 	
 	import screens.views.MainScreen;
 	

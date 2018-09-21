@@ -7,8 +7,6 @@ package core.serialize
 	
 	import ru.arslanov.core.enum.Enum;
 	
-	import contents.models.EffectContent;
-	
 	public class ItemSerializer implements ISerializer
 	{
 		public function ItemSerializer()

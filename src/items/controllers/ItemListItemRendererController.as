@@ -1,7 +1,5 @@
 package items.controllers
 {
-	import base.controllers.ControllerFeathers;
-	
 	import contents.events.ContentsEvent;
 	
 	import items.collections.ItemPropertyEnum;
@@ -9,6 +7,8 @@ package items.controllers
 	import items.events.ListItemRendererEvent;
 	import items.models.MoItem;
 	import items.views.ItemListItemRenderer;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
 	
 	import starling.events.Event;
 	

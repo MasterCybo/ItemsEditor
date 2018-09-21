@@ -1,11 +1,12 @@
 package contents.controllers
 {
-	import base.controllers.ControllerFeathers;
 	import base.views.AppPickerList;
 	import base.views.AppTextInput;
 	
 	import contents.models.EffectContent;
 	import contents.views.EffectListItemRenderer;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
 	
 	import starling.events.Event;
 	

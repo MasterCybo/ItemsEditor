@@ -1,8 +1,8 @@
 package core.commands
 {
-	import base.commands.Command;
-	
 	import core.models.AppSettings;
+	
+	import ru.aa.march.commands.Command;
 	
 	public class LoadSettings extends Command
 	{

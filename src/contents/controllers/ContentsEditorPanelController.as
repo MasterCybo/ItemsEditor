@@ -1,17 +1,18 @@
 package contents.controllers
 {
-	import base.controllers.ControllerFeathers;
 	import base.views.AppButton;
-	
-	import items.events.ItemListEvent;
-	import items.models.MoItem;
-	
-	import starling.events.Event;
 	
 	import contents.commands.AddContent;
 	import contents.commands.RemoveContent;
 	import contents.events.ContentListItemEvent;
 	import contents.views.ContentsEditorPanel;
+	
+	import items.events.ItemListEvent;
+	import items.models.MoItem;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
+	
+	import starling.events.Event;
 	
 	public class ContentsEditorPanelController extends ControllerFeathers
 	{

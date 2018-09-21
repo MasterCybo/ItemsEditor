@@ -1,23 +1,19 @@
 package contents.controllers
 {
-	import base.controllers.ControllerFeathers;
 	import base.views.AppPickerList;
 	import base.views.AppTextInput;
 	
 	import contents.collections.ContentsTypeEnum;
-	
 	import contents.models.ItemContent;
-	
 	import contents.views.ItemContentListItemRenderer;
 	
 	import core.models.DataStore;
 	
-	import feathers.core.FeathersControl;
-	import feathers.data.VectorCollection;
-	
 	import items.events.ItemsManagerEvent;
 	import items.filters.ItemsByContentsTypeFilter;
 	import items.models.MoItem;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
 	
 	import starling.events.Event;
 	

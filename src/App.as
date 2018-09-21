@@ -2,19 +2,18 @@ package
 {
 	import base.views.View;
 	
-	import core.views.PopupLayer;
-	
-	import screens.collections.ScreenID;
-	
-	import core.commands.EventDispatcherConfigurator;
 	import core.commands.FeathersConfigurator;
 	import core.commands.LoadSettings;
 	import core.commands.SerializeConfigurator;
+	import core.views.PopupLayer;
 	
 	import feathers.controls.AutoSizeMode;
 	import feathers.controls.StackScreenNavigator;
 	import feathers.controls.StackScreenNavigatorItem;
 	
+	import ru.aa.march.March;
+	
+	import screens.collections.ScreenID;
 	import screens.views.MainScreen;
 	
 	public class App extends View
@@ -28,8 +27,9 @@ package
 		{
 			super.initialize();
 			
+			March.me.config();
+			
 			new FeathersConfigurator().execute();
-			new EventDispatcherConfigurator().execute();
 			new SerializeConfigurator().execute();
 			new LoadSettings().execute();
 			

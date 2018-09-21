@@ -1,15 +1,14 @@
 package core.commands
 {
-	import base.commands.Command;
-	
 	import core.models.AppSettings;
-	import core.models.DataStore;
 	
 	import flash.events.Event;
 	import flash.filesystem.File;
 	import flash.filesystem.FileMode;
 	import flash.filesystem.FileStream;
 	import flash.net.FileFilter;
+	
+	import ru.aa.march.commands.Command;
 	
 	public class OpenFile extends Command
 	{

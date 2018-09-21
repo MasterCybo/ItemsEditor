@@ -1,6 +1,5 @@
 package categories.controllers
 {
-	import base.controllers.ControllerFeathers;
 	import base.views.AppPickerList;
 	import base.views.AppTextInput;
 	
@@ -18,6 +17,8 @@ package categories.controllers
 	import items.commands.AddItem;
 	import items.commands.RemoveItem;
 	import items.models.MoItem;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
 	
 	import starling.events.Event;
 	

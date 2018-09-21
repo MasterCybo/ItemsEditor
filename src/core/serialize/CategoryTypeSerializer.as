@@ -2,9 +2,9 @@ package core.serialize
 {
 	import categories.models.MoCategory;
 	
-	import ru.arslanov.core.enum.Enum;
-	
 	import contents.collections.ContentsTypeEnum;
+	
+	import ru.arslanov.core.enum.Enum;
 	
 	public class CategoryTypeSerializer implements ISerializer
 	{

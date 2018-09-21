@@ -1,7 +1,5 @@
 package properties.controllers
 {
-	import base.controllers.ControllerFeathers;
-	
 	import items.collections.ItemPropertyEnum;
 	import items.events.ItemListEvent;
 	import items.models.MoItem;
@@ -9,6 +7,7 @@ package properties.controllers
 	import properties.events.PropertyEditorEvent;
 	import properties.views.PropertiesPanel;
 	
+	import ru.aa.march.controllers.ControllerFeathers;
 	import ru.arslanov.core.enum.Enum;
 	
 	public class PropertiesPanelController extends ControllerFeathers

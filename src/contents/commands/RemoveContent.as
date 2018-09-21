@@ -1,13 +1,10 @@
 package contents.commands
 {
-	import base.commands.Command;
-	
 	import contents.models.IContentItem;
-	import contents.models.ItemContent;
 	
 	import items.models.MoItem;
 	
-	import contents.models.EffectContent;
+	import ru.aa.march.commands.Command;
 	
 	public class RemoveContent extends Command
 	{

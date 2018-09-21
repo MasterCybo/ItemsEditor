@@ -1,13 +1,13 @@
 package core.commands
 {
-	import base.commands.Command;
-	
 	import core.events.PopupEvent;
 	import core.models.AppSettings;
 	
 	import flash.filesystem.File;
 	import flash.filesystem.FileMode;
 	import flash.filesystem.FileStream;
+	
+	import ru.aa.march.commands.Command;
 	
 	public class QuickSave extends Command
 	{

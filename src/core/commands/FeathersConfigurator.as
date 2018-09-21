@@ -1,6 +1,6 @@
 package core.commands
 {
-	import base.commands.Command;
+	import ru.aa.march.commands.Command;
 	
 	public class FeathersConfigurator extends Command
 	{

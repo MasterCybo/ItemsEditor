@@ -1,13 +1,13 @@
 package core.commands
 {
-	import base.commands.Command;
-	
 	import core.models.AppSettings;
 	
 	import flash.events.Event;
 	import flash.filesystem.File;
 	import flash.filesystem.FileMode;
 	import flash.filesystem.FileStream;
+	
+	import ru.aa.march.commands.Command;
 	
 	public class SaveAs extends Command
 	{

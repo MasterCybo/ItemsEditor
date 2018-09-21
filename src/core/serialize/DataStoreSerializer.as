@@ -2,8 +2,6 @@ package core.serialize
 {
 	import categories.models.MoCategory;
 	
-	import core.models.AppSettings;
-	
 	import core.models.DataStore;
 	
 	import items.models.MoItem;

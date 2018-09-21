@@ -1,23 +1,20 @@
 package categories.controllers
 {
-	import base.controllers.ControllerFeathers;
+//	import base.controllers.ControllerFeathers;
 	
 	import categories.events.CategoryEvent;
-	
 	import categories.models.MoCategory;
-	
-	import categories.models.MoCategory;
-	
 	import categories.views.CategoryListItemRenderer;
 	
 	import core.models.DataStore;
 	
-	import feathers.core.FeathersControl;
-	
 	import items.collections.ItemsManager;
-	
 	import items.events.ItemsManagerEvent;
 	
+	import ru.aa.march.controllers.ControllerFeathers;
+
+//	import feathers.core.FeathersControl;
+
 	public class CategoryListItemRendererController extends ControllerFeathers
 	{
 		private var _category:MoCategory;

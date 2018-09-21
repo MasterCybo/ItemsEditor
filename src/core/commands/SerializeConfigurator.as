@@ -1,26 +1,25 @@
 package core.commands
 {
-	import base.commands.Command;
-	
 	import categories.collections.CategoriesManager;
 	import categories.models.MoCategory;
 	
+	import contents.models.EffectContent;
 	import contents.models.ItemContent;
 	
 	import core.models.DataStore;
 	import core.serialize.CategoriesManagerSerializer;
 	import core.serialize.CategoryTypeSerializer;
+	import core.serialize.ContentsSerializer;
 	import core.serialize.DataStoreSerializer;
 	import core.serialize.EffectContentSerializer;
 	import core.serialize.ItemContentSerializer;
 	import core.serialize.ItemSerializer;
 	import core.serialize.ItemsManagerSerializer;
-	import core.serialize.ContentsSerializer;
 	
 	import items.collections.ItemsManager;
 	import items.models.MoItem;
 	
-	import contents.models.EffectContent;
+	import ru.aa.march.commands.Command;
 	
 	public class SerializeConfigurator extends Command
 	{

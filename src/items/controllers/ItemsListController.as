@@ -1,7 +1,5 @@
 package items.controllers
 {
-	import base.controllers.ControllerFeathers;
-	
 	import categories.events.CategoryEvent;
 	import categories.models.MoCategory;
 	
@@ -12,6 +10,8 @@ package items.controllers
 	import items.events.ItemsManagerEvent;
 	import items.models.MoItem;
 	import items.views.ItemsList;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
 	
 	import starling.events.Event;
 	

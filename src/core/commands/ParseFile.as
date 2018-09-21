@@ -1,11 +1,11 @@
 package core.commands
 {
-	import base.commands.Command;
-	import base.commands.events.CommandEvent;
-	
 	import core.models.DataStore;
 	
 	import graphics.commands.LoadAtlas;
+	
+	import ru.aa.march.commands.Command;
+	import ru.aa.march.commands.events.CommandEvent;
 	
 	public class ParseFile extends Command
 	{

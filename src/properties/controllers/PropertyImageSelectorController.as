@@ -1,11 +1,11 @@
 package properties.controllers
 {
-	import base.controllers.ControllerFeathers;
-	
 	import graphics.Assets;
 	import graphics.events.AtlasEvent;
 	
 	import properties.views.PropertyImageSelector;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
 	
 	public class PropertyImageSelectorController extends ControllerFeathers
 	{

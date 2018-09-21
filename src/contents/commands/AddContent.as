@@ -1,8 +1,7 @@
 package contents.commands
 {
-	import base.commands.Command;
-	
 	import contents.collections.ContentsTypeEnum;
+	import contents.models.EffectContent;
 	import contents.models.IContentItem;
 	import contents.models.ItemContent;
 	
@@ -10,7 +9,7 @@ package contents.commands
 	
 	import items.models.MoItem;
 	
-	import contents.models.EffectContent;
+	import ru.aa.march.commands.Command;
 	
 	public class AddContent extends Command
 	{

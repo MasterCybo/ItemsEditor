@@ -1,15 +1,13 @@
 package graphics.commands
 {
-	import base.commands.Command;
-	
 	import core.models.AppSettings;
 	
-	import flash.events.Event;
 	import flash.filesystem.File;
-	import flash.net.FileFilter;
 	
 	import graphics.Assets;
 	import graphics.events.AtlasEvent;
+	
+	import ru.aa.march.commands.Command;
 	
 	public class LoadAtlas extends Command
 	{

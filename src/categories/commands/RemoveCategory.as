@@ -1,10 +1,10 @@
 package categories.commands
 {
-	import base.commands.Command;
-	
 	import categories.models.MoCategory;
 	
 	import core.models.DataStore;
+	
+	import ru.aa.march.commands.Command;
 	
 	public class RemoveCategory extends Command
 	{

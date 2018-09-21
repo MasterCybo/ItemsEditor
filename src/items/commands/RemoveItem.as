@@ -1,10 +1,10 @@
 package items.commands
 {
-	import base.commands.Command;
-	
 	import core.models.DataStore;
 	
 	import items.models.MoItem;
+	
+	import ru.aa.march.commands.Command;
 	
 	public class RemoveItem extends Command
 	{

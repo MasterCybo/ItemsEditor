@@ -1,7 +1,5 @@
 package categories.controllers
 {
-	import base.controllers.ControllerFeathers;
-	
 	import categories.collections.CategoriesManager;
 	import categories.commands.AddCategory;
 	import categories.commands.RemoveCategory;
@@ -15,6 +13,8 @@ package categories.controllers
 	import feathers.controls.Button;
 	
 	import items.collections.ItemsManager;
+	
+	import ru.aa.march.controllers.ControllerFeathers;
 	
 	import starling.events.Event;
 	

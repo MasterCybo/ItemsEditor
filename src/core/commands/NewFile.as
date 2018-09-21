@@ -1,12 +1,12 @@
 package core.commands
 {
-	import base.commands.Command;
-	
 	import core.models.AppSettings;
 	import core.models.DataStore;
 	
 	import graphics.Assets;
 	import graphics.events.AtlasEvent;
+	
+	import ru.aa.march.commands.Command;
 	
 	public class NewFile extends Command
 	{
