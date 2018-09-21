@@ -7,6 +7,8 @@ package categories.views
 	import categories.controllers.CategoryEditorPanelController;
 	import categories.models.MoCategory;
 	
+	import contents.collections.ContentsTypeEnum;
+	
 	import feathers.controls.Header;
 	import feathers.controls.LayoutGroup;
 	import feathers.controls.Panel;
@@ -24,12 +26,10 @@ package categories.views
 	import items.models.MoItem;
 	import items.views.*;
 	
-	import ru.arslanov.core.enum.Enum;
+	import ru.aa.enums.Enum;
 	
 	import starling.display.DisplayObject;
 	import starling.events.Event;
-	
-	import contents.collections.ContentsTypeEnum;
 	
 	public class CategoryEditorPanel extends Panel
 	{

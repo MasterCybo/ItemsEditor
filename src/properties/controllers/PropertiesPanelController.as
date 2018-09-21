@@ -7,8 +7,8 @@ package properties.controllers
 	import properties.events.PropertyEditorEvent;
 	import properties.views.PropertiesPanel;
 	
+	import ru.aa.enums.Enum;
 	import ru.aa.march.controllers.ControllerFeathers;
-	import ru.arslanov.core.enum.Enum;
 	
 	public class PropertiesPanelController extends ControllerFeathers
 	{

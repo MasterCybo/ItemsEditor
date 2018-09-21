@@ -1,6 +1,6 @@
 package contents.collections
 {
-	import ru.arslanov.core.enum.EnumString;
+	import ru.aa.enums.EnumString;
 	
 	public class ContentsTypeEnum extends EnumString
 	{

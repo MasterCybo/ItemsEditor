@@ -4,11 +4,13 @@ package contents.views
 	import base.views.AppPickerList;
 	import base.views.AppTextInput;
 	
+	import contents.collections.EffectContentEnum;
 	import contents.controllers.EffectContentListItemController;
+	import contents.events.ContentListItemEvent;
+	import contents.models.EffectContent;
 	
 	import feathers.controls.LayoutGroup;
 	import feathers.controls.List;
-	import feathers.controls.PickerList;
 	import feathers.controls.renderers.DefaultListItemRenderer;
 	import feathers.controls.renderers.IListItemRenderer;
 	import feathers.core.IToggle;
@@ -18,17 +20,9 @@ package contents.views
 	import feathers.layout.HorizontalLayoutData;
 	import feathers.layout.VerticalAlign;
 	
-	import flash.events.EventDispatcher;
-	
-	import items.models.MoItem;
-	
-	import ru.arslanov.core.enum.Enum;
+	import ru.aa.enums.Enum;
 	
 	import starling.events.Event;
-	
-	import contents.collections.EffectContentEnum;
-	import contents.events.ContentListItemEvent;
-	import contents.models.EffectContent;
 	
 	public class EffectListItemRenderer extends LayoutGroup implements IListItemRenderer, IToggle
 	{

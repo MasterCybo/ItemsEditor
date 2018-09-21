@@ -4,7 +4,7 @@ package core.serialize
 	
 	import contents.collections.ContentsTypeEnum;
 	
-	import ru.arslanov.core.enum.Enum;
+	import ru.aa.enums.Enum;
 	
 	public class CategoryTypeSerializer implements ISerializer
 	{

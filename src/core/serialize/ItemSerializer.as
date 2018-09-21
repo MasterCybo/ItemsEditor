@@ -5,7 +5,7 @@ package core.serialize
 	import items.collections.ItemPropertyEnum;
 	import items.models.MoItem;
 	
-	import ru.arslanov.core.enum.Enum;
+	import ru.aa.enums.Enum;
 	
 	public class ItemSerializer implements ISerializer
 	{

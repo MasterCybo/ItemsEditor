@@ -1,6 +1,6 @@
 package items.collections
 {
-	import ru.arslanov.core.enum.EnumString;
+	import ru.aa.enums.EnumString;
 	
 	public class ItemPropertyEnum extends EnumString
 	{
