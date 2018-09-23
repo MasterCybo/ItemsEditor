@@ -4,12 +4,17 @@ package contents.collections
 	
 	public class ContentsTypeEnum extends EnumString
 	{
-		public static const CONTAINER:ContentsTypeEnum = new ContentsTypeEnum("container");
-		public static const EFFECTS:ContentsTypeEnum = new ContentsTypeEnum("effects");
+		public static const CONTAINER:ContentsTypeEnum = new ContentsTypeEnum("container", "Контейнер");
+		public static const EFFECTS:ContentsTypeEnum = new ContentsTypeEnum("effects", "Предмет");
 		
-		public function ContentsTypeEnum(val:String = null)
+		private var _locale:String;
+		
+		public function ContentsTypeEnum(val:String, locale:String)
 		{
+			_locale = locale;
 			super(val);
 		}
+		
+		public function get locale():String {return _locale;}
 	}
 }

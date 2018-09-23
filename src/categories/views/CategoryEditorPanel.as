@@ -72,7 +72,7 @@ package categories.views
 		private static function pickerItemRendererFactory():IListItemRenderer
 		{
 			var renderer:DefaultListItemRenderer = new DefaultListItemRenderer();
-			renderer.labelField = "value";
+			renderer.labelField = "locale";
 			return renderer;
 		}
 		
@@ -96,7 +96,7 @@ package categories.views
 			_contentsTypePicker = new AppPickerList();
 			addChild(_contentsTypePicker);
 			
-			_contentsTypePicker.labelField = "value";
+			_contentsTypePicker.labelField = "locale";
 			_contentsTypePicker.itemRendererFactory = pickerItemRendererFactory;
 			_contentsTypePicker.dataProvider = new VectorCollection(Enum.getElementsList(ContentsTypeEnum));
 			

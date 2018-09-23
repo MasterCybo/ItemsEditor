@@ -50,16 +50,16 @@ package properties.views
 				if (property.editable) {
 					switch (true) {
 						case property == ItemPropertyEnum.DESCRIPTION:
-							propView = new PropertyAreaEditor(property.getString(), item.getValue(property));
+							propView = new PropertyAreaEditor(property.locale, item.getValue(property));
 							break;
 						case property == ItemPropertyEnum.IMAGE:
-							propView = new PropertyImageSelector(property.getString(), item.getValue(property));
+							propView = new PropertyImageSelector(property.locale, item.getValue(property));
 							break;
 						case property.equalsType(String):
-							propView = new PropertyStringEditor(property.getString(), item.getValue(property));
+							propView = new PropertyStringEditor(property.locale, item.getValue(property));
 							break;
 						case property.equalsType(Number):
-							propView = new PropertyNumberEditor(property.getString(), item.getValue(property));
+							propView = new PropertyNumberEditor(property.locale, item.getValue(property));
 							break;
 					}
 					

@@ -64,7 +64,7 @@ package contents.views
 		private static function pickerItemRendererFactory():IListItemRenderer
 		{
 			var renderer:DefaultListItemRenderer = new DefaultListItemRenderer();
-			renderer.labelField = "value";
+			renderer.labelField = "locale";
 			return renderer;
 		}
 		
@@ -79,7 +79,7 @@ package contents.views
 			layout = thisLayout();
 			
 			_pickerList = new AppPickerList();
-			_pickerList.labelField = "value";
+			_pickerList.labelField = "locale";
 			_pickerList.layoutData = _pickerLayoutData;
 			_pickerList.dataProvider = _effectPickerList;
 			_pickerList.itemRendererFactory = pickerItemRendererFactory;
