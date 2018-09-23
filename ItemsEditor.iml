@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="Flex" version="4">
-  <component name="FlexBuildConfigurationManager" active="debug">
+  <component name="FlexBuildConfigurationManager" active="ItemsEditorDebug">
     <configurations>
-      <configuration name="debug" target-platform="Desktop" pure-as="true" main-class="Main" output-file="ItemsEditor.swf" output-folder="$MODULE_DIR$/out/debug">
+      <configuration name="ItemsEditorDebug" target-platform="Desktop" pure-as="true" main-class="Main" output-file="ItemsEditor-debug.swf" output-folder="$MODULE_DIR$/out/debug">
         <dependencies target-player="31.0">
           <entries>
             <entry library-name="libs" library-level="project">
@@ -11,7 +11,11 @@
           </entries>
           <sdk name="AIR_31c" />
         </dependencies>
-        <compiler-options />
+        <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="true" />
+          </map>
+        </compiler-options>
         <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/items-editor-app.xml" package-file-name="ItemsEditor">
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/icons" path-in-package="icons" />
@@ -20,7 +24,7 @@
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="release" target-platform="Desktop" pure-as="true" main-class="Main" output-file="ItemsEditor.swf" output-folder="$MODULE_DIR$/out/release">
+      <configuration name="ItemsEditor" target-platform="Desktop" pure-as="true" main-class="Main" output-file="ItemsEditor.swf" output-folder="$MODULE_DIR$/out/release">
         <dependencies>
           <entries>
             <entry library-name="libs" library-level="project">
@@ -34,7 +38,7 @@
             <entry key="compiler.debug.swf" value="false" />
           </map>
         </compiler-options>
-        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/items-editor-app.xml" package-file-name="release">
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/items-editor-app.xml" package-file-name="ItemsEditor">
           <files-to-package>
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/icons" path-in-package="icons" />
           </files-to-package>
